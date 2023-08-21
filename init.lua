@@ -7,3 +7,5 @@ require('p-lsp')
 require('p-tree')
 require('color')
 require('text')
+require('p-lualine')
+

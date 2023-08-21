@@ -22,4 +22,8 @@ return require('packer').startup(function(use)
 	use 'mg979/vim-visual-multi'
 	use 'gcmt/wildfire.vim'
 	use 'tpope/vim-surround'
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
