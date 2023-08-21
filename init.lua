@@ -8,4 +8,5 @@ require('p-tree')
 require('color')
 require('text')
 require('p-lualine')
+require('p-telescope')
 
