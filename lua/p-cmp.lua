@@ -48,10 +48,10 @@ local lspkind= require 'lspkind'
           if icon then 
             vim_item.kind = icon
             vim_item.kind_hl_group = hl_group
-            return vim item
+            return vim_item
           end
         end
-        return lspkind.cmp_format({with_text = false})(entry, vim_item)
+        return lspkind.cmp_format( {with_text = false} )(entry, vim_item)
       end
     }
   })
@@ -80,18 +80,8 @@ local lspkind= require 'lspkind'
     })
   })
 
+
 vim.cmd([[
-set completeopt=menuone, noinsert, noselect
-highlight! default link CmpItemKind CmpItemMenuDefault
+ set completeopt=menuone,noselect
+ highlight! default link CmpItemKind CmpItemMenuDefault
 ]])
-
-
-
-
-
-
-
-
-
-
-
