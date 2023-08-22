@@ -29,5 +29,7 @@ return require('packer').startup(function(use)
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.2',
   requires = { {'nvim-lua/plenary.nvim'} }
-}  
+    }  
+    use '/MattesGroeger/vim-bookmarks'
+    use 'tom-anders/telescope-vim-bookmarks.nvim'
 end)

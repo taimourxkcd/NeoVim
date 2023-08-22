@@ -11,3 +11,6 @@ keymap.set('n', 'f', '<C-w>w')
 
 keymap.set('n', 'H', '^')
 keymap.set('n', 'L', '$')
+
+
+keymap.set('x', '^N', '*<Nop>', { noremap=true, silent=true })

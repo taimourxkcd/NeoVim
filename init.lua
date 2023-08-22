@@ -1,4 +1,3 @@
-
 require('base')
 require('maps')
 require('plugins')
@@ -9,4 +8,5 @@ require('color')
 require('text')
 require('p-lualine')
 require('p-telescope')
+require('p-bookmark')
 

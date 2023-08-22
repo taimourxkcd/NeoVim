@@ -4,14 +4,14 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 
 local on_attach = function(client, bufnr)
     local bufopts = { noremap=true, silent=true, buffer=bufnr }
-    vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
-    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+    vim.keymap.set('n', 'gd','<cmd>Telescope lsp_definitions<cr>' , opts)
     vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
     vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
     vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
     vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+    vim.keymap.set('n', '<leader>d','<cmd>Telescope lsp_document_symbols<cr>' , opts)
 -- format on save
    vim.api.nvim_create_autocmd('BufWritePre', {
 	group=vim.api.nvim_create_autogroup('LspFormatting', {clear=true}),
