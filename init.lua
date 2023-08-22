@@ -9,4 +9,6 @@ require('text')
 require('p-lualine')
 require('p-telescope')
 require('p-bookmark')
+require('p-lspkind')
+require('p-cmp')
 

@@ -22,8 +22,10 @@ local on_attach = function(client, bufnr)
    })
 end
 
+  local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local lsp_config={
+  capabilities = capabilities,
 	on_attach=function(client, bufnr)
 		on_attach(_, bufnr)
 	end
