@@ -1,31 +1,28 @@
 vim.g.everforest_diagnostic_line_highlight = 1
 vim.cmd('colorscheme everforest')
-
-vim.fn.sign_define('DiagnosticSignError', 
-{
-    text = 'E',
+vim.fn.sign_define({
+  {
+    name = 'DiagnosticSignError',
+    text = '',
     texthl = 'DiagnosticSignError',
-    linehl = 'ErrorLine'
-})
-
-vim.fn.sign_define('DiagnosticSignWarn', 
-{
-    text = 'W',
+    linehl = 'ErrorLine',
+  },
+  {
+    name = 'DiagnosticSignWarn',
+    text = '',
     texthl = 'DiagnosticSignWarn',
-    linehl = 'WarningLine'
-})
-
-vim.fn.sign_define('DiagnosticSignInfo', 
-{
-    text = 'I',
+    linehl = 'WarningLine',
+  },
+  {
+    name = 'DiagnosticSignInfo',
+    text = '',
     texthl = 'DiagnosticSignInfo',
-    linehl = 'InfoLine'
-})
-
-vim.fn.sign_define('DiagnosticSignHint',
-{
-    text = 'H',
+    linehl = 'InfoLine',
+  },
+  {
+    name = 'DiagnosticSignHint',
+    text = '',
     texthl = 'DiagnosticSignHint',
-    linehl = 'HintLine'
+    linehl = 'HintLine',
+  },
 })
-
